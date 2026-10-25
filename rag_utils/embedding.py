@@ -10,7 +10,7 @@ AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
 AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION")
 EMBED_MODEL = "text-embedding-3-small"
-endpoint = "https://instanceragchatbot.openai.azure.com/"
+endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
 # EMBED_MODEL = os.getenv("AZURE_OPENAI_EMBEDDING_MODEL")  # This should be the *deployment name* in Azure
 
 # Initialize Azure OpenAI client
